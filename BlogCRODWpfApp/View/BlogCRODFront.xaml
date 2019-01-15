@@ -1,0 +1,381 @@
+﻿<Window x:Class="BlogCRODWpfApp.View.BlogCRODFront"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
+        xmlns:local="clr-namespace:BlogCRODWpfApp.View"
+        mc:Ignorable="d"
+        Title="BlogCRODFront" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        
+        xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+        fw:AcrylicWindow.Enabled="True"
+        fw:AcrylicWindow.ShowTitleBar="True" Height="850" Width="1400" WindowStyle="None" AllowsTransparency="True"  
+        Background="BlanchedAlmond">
+    <Window.Resources>
+
+
+    </Window.Resources>
+    <Grid>
+        <telerik:RadTabControl Align="Justify" Margin="4,0,-4,0">
+            <telerik:RadTabItem Width="auto" Height="auto" Header="Add Items" FontSize="20">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock  Grid.Column="0"
+                                Grid.Row="2"
+                                Grid.ColumnSpan="3"
+                                Grid.RowSpan="1"
+                                FontSize="18.5" Margin="5,0,66,0"   
+                                >Goods Name</TextBlock>
+
+                    <TextBox x:Name="NameAdd"
+                             Text="{Binding ProductNameAdd , UpdateSourceTrigger=PropertyChanged}"
+                             Grid.Column="0"              
+                             Grid.Row="3"
+                             Grid.ColumnSpan="4"
+                             Grid.RowSpan="2"                  
+                             FontSize="17" Margin="5,0,66,0"></TextBox>
+
+                    <TextBlock  Grid.Column="4"
+                                Grid.ColumnSpan="2"
+                                FontSize="18.5" Grid.Row="2"   
+                                >Unit Price</TextBlock>
+
+                    <TextBox x:Name="PriceAdd"                             
+                             Text="{Binding ProductPriceAdd , UpdateSourceTrigger=PropertyChanged}"
+                             Grid.Column="4"              
+                             Grid.Row="3"
+                             Grid.ColumnSpan="3"
+                             Grid.RowSpan="2"                  
+                             FontSize="17"></TextBox>
+
+                    <TextBlock  Grid.Column="0"
+                                Grid.Row="8"
+                                Grid.ColumnSpan="3"
+                                Grid.RowSpan="1"
+                                FontSize="18.5" Margin="5,0,66,0"   
+                                >Package Type</TextBlock>
+
+                    <TextBox x:Name="PackageAdd"
+                             Text="{Binding ProductPackageTypeAdd , UpdateSourceTrigger=PropertyChanged}"
+                             Grid.Column="0"              
+                             Grid.Row="9"
+                             Grid.ColumnSpan="4"
+                             Grid.RowSpan="2"                  
+                             FontSize="17" Margin="5,0,66,0"></TextBox>
+
+                    <TextBlock  Grid.Column="4"
+                                Grid.ColumnSpan="2"
+                                FontSize="18.5" Grid.Row="8"   
+                                >Company Name</TextBlock>
+
+                    <TextBox x:Name="CompanyNameAdd"
+                             Text="{Binding ProductCompanyNameAdd , UpdateSourceTrigger=PropertyChanged}"
+                             Grid.Column="4"              
+                             Grid.Row="9"
+                             Grid.ColumnSpan="3"
+                             Grid.RowSpan="2"                  
+                             FontSize="17"></TextBox>
+
+
+                    <TextBlock  Grid.Column="0"
+                                Grid.Row="14"
+                                Grid.ColumnSpan="3"
+                                Grid.RowSpan="1"
+                                FontSize="18.5" Margin="5,0,66,0"   
+                                >Contact Name</TextBlock>
+
+                    <TextBox x:Name="ContactNameAdd"
+                             Text="{Binding ProductContactNameAdd , UpdateSourceTrigger=PropertyChanged}"
+                             Grid.Column="0"              
+                             Grid.Row="15"
+                             Grid.ColumnSpan="4"
+                             Grid.RowSpan="2"                  
+                             FontSize="17" Margin="5,0,66,0"></TextBox>
+
+
+                    <TextBlock  Grid.Column="4"
+                                Grid.ColumnSpan="2"
+                                FontSize="18.5" Grid.Row="14"   
+                                >City</TextBlock>
+
+                    <TextBox x:Name="CityNameAdd"
+                             Text="{Binding ProductCityNameAdd , UpdateSourceTrigger=PropertyChanged}"
+                             Grid.Column="4"              
+                             Grid.Row="15"
+                             Grid.ColumnSpan="3"
+                             Grid.RowSpan="2"                  
+                             FontSize="17"></TextBox>
+
+                    <TextBlock  Grid.Column="0"
+                                Grid.Row="20"
+                                Grid.ColumnSpan="3"
+                                Grid.RowSpan="1"
+                                FontSize="18.5" Margin="5,0,66,0"   
+                                >Country</TextBlock>
+
+                    <TextBox x:Name="CountryNameAdd"
+                             Text="{Binding ProductCountryNameAdd , UpdateSourceTrigger=PropertyChanged}"
+                             Grid.Column="0"              
+                             Grid.Row="21"
+                             Grid.ColumnSpan="4"
+                             Grid.RowSpan="2"                  
+                             FontSize="17" Margin="5,0,66,0"></TextBox>
+
+                    <TextBlock  Grid.Column="4"
+                                Grid.ColumnSpan="2"
+                                FontSize="18.5" Grid.Row="20"   
+                                >Phone/Fax</TextBlock>
+
+                    <TextBox x:Name="PhoneFaxAdd"
+                             Text="{Binding ProductPhoneFaxAdd , UpdateSourceTrigger=PropertyChanged}"
+                             Grid.Column="4"              
+                             Grid.Row="21"
+                             Grid.ColumnSpan="3"
+                             Grid.RowSpan="2"                  
+                             FontSize="17"></TextBox>
+                    <WrapPanel                                    
+                        Grid.Row="23"
+                        Grid.Column="0"              
+                        Grid.ColumnSpan="3"
+                        Grid.RowSpan="4" Margin="5,24,66,4" >
+
+                        <Button Command="{Binding ClickAddCommmand , UpdateSourceTrigger=PropertyChanged}"
+                            CommandParameter="Submit Form"    
+                            FontSize="18.5"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Content="Submit Form"
+                            Height="80"
+                            Width="140"
+                            />
+                    </WrapPanel>
+
+                    <WrapPanel
+                        Grid.Column = "4"
+                        Grid.Row ="24"
+                        Grid.RowSpan="3"
+                        Grid.ColumnSpan="3" Margin="0,14,0,15">
+                        <CheckBox x:Name="DiscountCheckBox"
+                                  IsChecked="{Binding IsDiscounted ,UpdateSourceTrigger=PropertyChanged}"
+                                  HorizontalAlignment="Left" RenderTransformOrigin="1.19,0.825" Height="24" Width="18" Content="">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
+                        </CheckBox>
+                        <TextBlock
+                            Grid.Column="2"
+                            Grid.Row="9"                   
+                            FontSize="22"                            
+                            Grid.ColumnSpan="5"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Center"
+                            Width="169"
+                            Height="30" 
+                            RenderTransformOrigin="2,0.456"
+                            Text="   Is discounted"/>
+                    </WrapPanel>
+
+                </Grid>
+            </telerik:RadTabItem>
+
+            <telerik:RadTabItem Width="auto" Height="auto" Header="Data Observer" FontSize="20">
+                <Grid ShowGridLines ="False">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock  Grid.Column="3"
+                                Grid.Row="1"
+                                Grid.ColumnSpan="5"
+                                Grid.RowSpan="1"
+                                FontSize="27"   
+                                >Goods</TextBlock>
+                    <TextBox x:Name="NameSearch"
+                             Text="{Binding ProductNameSearch , UpdateSourceTrigger=PropertyChanged}"
+                             Grid.Column="1"              
+                             Grid.Row="2"
+                             Grid.ColumnSpan="5"
+                             Grid.RowSpan="2"                  
+                             FontSize="22.5"
+                             TextAlignment="Left">
+                        <TextBox.InputBindings>
+                            <KeyBinding Command="{Binding SearchProduct}" Key="Enter"/>
+                        </TextBox.InputBindings>
+                    </TextBox>
+                    
+                    <ListBox x:Name="GoodsListBox" 
+                             ItemsSource="{Binding ObservableCollectionGoodsListBoxTemp , UpdateSourceTrigger=PropertyChanged}"
+                             Grid.Column="0"
+                             Grid.Row="5"
+                             Grid.ColumnSpan="7"
+                             Grid.RowSpan="12"                  
+                             FontSize="18"
+                             Foreground="Black"
+                             HorizontalContentAlignment="Stretch" Margin="0,6,0,-6">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <DockPanel>
+                                    <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+
+                                        <Button  Background="Orange"
+                                                 Content="Modify"
+                                                 Command="{Binding Path=DataContext.ClickModifyCommand , UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                                 CommandParameter="{Binding ProductModel}">
+                                        </Button>
+
+                                        <Button  Background="Red"
+                                                 Content="Delete" 
+                                                 Command="{Binding Path=DataContext.ClickDeleteCommmand ,UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                                 CommandParameter="{Binding}">
+                                        </Button>
+
+                                        <Button  Background="LightSlateGray"
+                                                 Content="Expand" 
+                                                 Command="{Binding Path=DataContext.ClickShowCommmand ,UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                                 CommandParameter="{Binding}">
+                                        </Button>
+
+                                    </StackPanel>
+
+                                    <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+                                        <TextBox Text="{Binding ProductModel.ProductName}" Background="White" Width="700"/>
+                                        <TextBox Name="ldGoodsPrice" Text="{Binding ProductModel.UnitPrice}" Margin="20,0,0,0" Background="White" Width="350"/>
+                                    </StackPanel>
+                                </DockPanel>
+
+                                <DataTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding ProductModel.IsDiscontinued}" Value="True">
+                                        <Setter TargetName="ldGoodsPrice" Property="Foreground" Value="Green">
+                                        </Setter>
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
+
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                </Grid>
+            </telerik:RadTabItem>
+
+            <telerik:RadTabItem Width="auto" Height="auto" Header="Full Info" FontSize="20">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <RichTextBox
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Grid.ColumnSpan="5"
+                        Grid.RowSpan="15"                  
+                        FontSize="22.5"
+                        BorderThickness="1"
+                        Background="LightGray"
+                        IsReadOnly="True">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Foreground="Black" Text="{Binding ProductFullInfo , UpdateSourceTrigger=PropertyChanged}"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+
+                </Grid>
+            </telerik:RadTabItem>
+
+        </telerik:RadTabControl>
+
+    </Grid>
+</Window>
